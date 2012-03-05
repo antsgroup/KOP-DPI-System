@@ -1,0 +1,17 @@
+KOP-DPI-System
+
+-----Introduction
+
+KOP(Keen On Packet, 靠谱) DPI system is a new DPI framework on mobile Internet designed by ANTS Lab, Xi'an Jiaotong University which have more than 350 rules covering 13 applications in 3 different mobile OS （iOS, Android and Symbian, Windows Phone 7 is on his way) and reach the speed of nearly 50Mbps.
+
+------Install and Usage
+
+1. Run "make" in the 'src' folder.
+2. ./filter [your_pcap_file], and the results will shown in the screen.
+3. Modify the main function in filter.cc, it can analyze trace online.
+
+------Contact
+
+This is a very simple doc, if you have any question, contact me with the email 'aquatoney at gmail dot com'. I will response asap.
+
+Regards.

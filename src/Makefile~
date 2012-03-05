@@ -1,0 +1,17 @@
+objects = filter.o global.o rule.o match_parser.o rule_key.o rule_set.o
+filter: $(objects)
+	g++ -O2 -o filter $(objects) -lnids -lpcre -lpcrecpp
+filter.o: filter.cc
+	g++ -c filter.cc -lnids
+global.o: global.cc include/global.h
+	g++ -c global.cc -lpcre -lpcrecpp
+rule.o: rule.cc include/rule.h
+	g++ -c rule.cc -lpcre -lpcrecpp
+match_parser.o: match_parser.cc include/match_parser.h include/rule.h include/rule_set.h include/rule_key.h
+	g++ -c match_parser.cc -lpcre -lpcrecpp
+rule_key.o: rule_key.cc include/rule_key.h include/rule.h
+	g++ -c rule_key.cc
+rule_set.o: rule_set.cc include/rule.h include/rule_key.h
+	g++ -c rule_set.cc
+clean:
+	rm filter $(objects)

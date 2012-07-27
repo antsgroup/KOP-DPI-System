@@ -2,7 +2,7 @@ KOP-DPI-System
 
 -----Introduction
 
-KOP(Keen On Packet, 靠谱) DPI system is a new DPI framework on mobile Internet designed by ANTS Group, MOE Lab, Xi'an Jiaotong University which have more than 350 rules covering 13 applications in 3 different mobile OS （iOS, Android and Symbian, Windows Phone 7 is on his way) and reach the speed of nearly 50Mbps.
+KOP(Keen On Packet, 靠谱) DPI system is a new DPI framework on mobile Internet designed by ANTS Grou, which have more than 350 rules covering 13 applications in 3 different mobile OS （iOS, Android and Symbian, Windows Phone 7 is on his way) and reach the speed of nearly 50Mbps.
 
 ------Install and Usage
 
